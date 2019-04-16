@@ -1,7 +1,7 @@
 import React from 'react';
 import './participantList.css';
 import participants from '../../store';
-import Participant from './participant';
+import Stage from './stage';
 
 
 const people = participants.map(
@@ -16,7 +16,7 @@ const people = participants.map(
 )
 
 export default function ParticipantList(props) {
-    return (
+  return (
     <div className="container">
       {people}
     </div>
