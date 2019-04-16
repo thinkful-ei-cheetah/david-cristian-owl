@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Participant component renders ui correctly 1`] = `
+<div
+  className="person-container"
+>
+  <img
+    alt="avatar"
+    src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+  />
+  <div>
+    <h3>
+      Joe
+    </h3>
+    <p
+      style={
+        Object {
+          "color": "green",
+        }
+      }
+    >
+      in session
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders ui correctly 1`] = `
+<div
+  className="person-container"
+>
+  <img
+    alt="avatar"
+    src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+  />
+  <div>
+    <h3>
+      Joe
+    </h3>
+    <p
+      style={
+        Object {
+          "color": "green",
+        }
+      }
+    >
+      in session
+    </p>
+  </div>
+</div>
+`;

@@ -1,7 +1,6 @@
 import React from 'react';
-import './participant.css';
-import ReactDom from 'react-dom';
-import participant from './store';
+import './participantList.css';
+import participants from './store';
 import Participant from './participant';
 
 
@@ -9,21 +8,19 @@ const people = participants.map(
   (person, i) =>
     <Participant
       name={person.name}
-      content={person.content}
+      inSession={person.inSession}
+      onStage={person.onStage}
       avatar={person.avatar}
       key={i}
     />
 )
 
-export default function Participant(props) {
-
-  render() {
+export default function ParticipantList(props) {
     return (
-      <div class="container">
-        
-      </div>
-    );
-  }
+    <div className="container">
+      {people}
+    </div>
+  );
 }
 
 

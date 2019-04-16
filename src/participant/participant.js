@@ -1,25 +1,23 @@
 import React from 'react';
 import './participant.css';
-import ReactDom from 'react-dom';
-import participant from './store'
 
 export default function Participant(props) {
-  if (props.inSession) {
+  if (props.inSession && !props.onStage) {
     return (
-      <div class="person-container">
+      <div className="person-container">
         <img src={props.avatar} alt='avatar' />
-        <div>
+        <div className="person">
           <h3>{props.name}</h3>
           <p style={{color:"green"}}>in session</p>
         </div>
       </div>
     )
   }
-  else if (props.onStage){
+  else if (props.inSession && props.onStage){
     return (
-      <div class="person-container">
+      <div className="person-container">
         <img src={props.avatar} alt='avatar' />
-        <div>
+        <div className="person">
           <h3>{props.name}</h3>
           <p style={{ color: "green" }}>on stage</p>
         </div>
@@ -28,9 +26,9 @@ export default function Participant(props) {
   }
   else {
     return (
-      <div class="person-container">
+      <div className="person-container">
         <img src={props.avatar} alt='avatar' />
-        <div>
+        <div className="person">
           <h3>{props.name}</h3>
           <p style={{ color: "gray" }}>left session</p>
         </div>
