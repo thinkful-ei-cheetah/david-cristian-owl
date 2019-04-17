@@ -1,6 +1,6 @@
 import React from 'react';
 import './participantList.css';
-import participants from '../../store';
+import participants from '../store';
 import Participant from './participant';
 
 
